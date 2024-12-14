@@ -10,6 +10,10 @@ body {
     background-color: #d4e9e7;
     color: black;
     line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
 }
 
 header {
@@ -17,6 +21,7 @@ header {
     text-align: center;
     background-color: #aad4cf;
     padding: 20px;
+    grid-row: 1 / 2;
 }
 
 header img {
@@ -56,35 +61,54 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main Content styling */
 main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
     padding: 20px;
+    grid-row: 2 / 3;
+    align-items: start;
+    justify-items: center;
 }
 
-article {
+#story, #facts, #contact {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 90%;
     max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
 }
 
-.float-left {
-    float: left;
-    margin: 10px 20px 10px 0;
+#story article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+#story article img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
 }
 
 #facts ul {
     list-style-type: disc;
-    margin: 20px 0 20px 40px;
+    padding-left: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
     background-color: #aad4cf;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
 }
 
 form label {
@@ -94,9 +118,10 @@ form label {
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    max-width: 500px;
     width: 100%;
-    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form button {
@@ -106,6 +131,7 @@ form button {
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
+    text-align: center;
 }
 
 form button:hover {
@@ -116,5 +142,5 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #aad4cf;
-    margin-top: 20px;
+    grid-row: 3 / 4;
 }
