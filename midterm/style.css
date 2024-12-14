@@ -30,9 +30,8 @@ header img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
     font-size: 2.5rem;
-    text-shadow: 1px 1px 5px #fff;
+    color: black;
 }
 
 nav ul {
@@ -63,14 +62,14 @@ main {
 }
 
 article {
-    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 .float-left {
     float: left;
-    margin: 0 15px 15px 0;
-    max-width: 300px;
-    height: auto;
+    margin: 10px 20px 10px 0;
 }
 
 #facts ul {
@@ -95,9 +94,9 @@ form label {
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 form button {
