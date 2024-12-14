@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lone Starfish</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/header-image.jpg" alt="Starfish on the beach">
+        <h1 class="site-title">Lone Starfish</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="story">
+            <h2>Life of a Starfish</h2>
+            <article>
+                <img src="images/starfish.jpg" alt="Starfish close-up" class="float-left">
+                <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mao. Snapper catalufa silver driftfish...</p>
+            </article>
+        </section>
+
+        <section id="facts">
+            <h2>Facts About Starfish</h2>
+            <ul>
+                <li>Starfish have no brains or blood.</li>
+                <li>They can regenerate lost arms.</li>
+                <li>They eat by extending their stomachs out of their mouths.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact to Learn More</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <p>Would you like to visit the starfish?</p>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="visit" value="yes">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="visit" value="no">
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="maybe" name="visit" value="maybe">
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Lone Starfish</p>
+    </footer>
+</body>
+</html>
