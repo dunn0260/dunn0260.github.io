@@ -1,0 +1,51 @@
+<!DOCTYPE css>
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #8ecae6;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.site-title {
+    color: #ff7f50;
+    text-align: center;
+}
+
+#my-image {
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 2px 1px black;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li:nth-child(odd) {
+    background-color: #f0f0f0;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #ffd166;
+    border: 1px solid #f77f00;
+    color: #073b4c;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+a:hover, a:focus {
+    background-color: #ef476f;
+    color: #fff;
+    border-color: #d62828;
+}
