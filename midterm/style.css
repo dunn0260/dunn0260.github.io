@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+article img {
+    width: 100%;
+    height: auto;
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 p {
     display: inline;
 }
