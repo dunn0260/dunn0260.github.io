@@ -1,0 +1,493 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+.logo {
+    width: 80px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    background-color: #222;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #C68D00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header .search-form {
+    display: flex;
+}
+
+header .search-form input {
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+header .search-form button {
+    background: #222;
+    color:#C68D00;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #C68D00;
+    padding: 5px 10px;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 60vh; 
+    overflow: hidden; 
+}
+
+.banner img {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: relative; 
+    z-index: 2; 
+    max-width: fit-content;
+    text-align: left;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.connect-button{
+    background-color: #C68D00;
+}
+
+.btn-txt{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.banner-header{
+    font-size: 80px;
+    margin:0%;
+}
+
+.banner-text{
+    font-size: 15px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    padding: 10px;
+    border: 1px solid #c78c06;
+}
+
+.contact button {
+    background-color: #c78c06;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background-color: #ffe6ac;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.team-section {
+    padding-bottom: 150px;
+    text-align: left;
+    display: block; 
+    width: 100%; 
+    min-height: fit-content; 
+}
+
+.team-header {
+    font-size: 2.5rem;
+    margin: 20px 20px; 
+    color: #333;
+}
+
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0; 
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 600px; 
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-details {
+    background-color: #FFE6AC; 
+    padding: 15px 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    border: none; 
+}
+
+.team-name {
+    font-size: 1.5rem; 
+    margin: 5px 0; 
+    color: #333;
+}
+
+.team-position {
+    font-size: 1.1rem;
+    margin: 2px 0; 
+    color: #444;
+}
+
+.team-details hr {
+    width: 50%;
+    border: 0;
+    border-top: 1px solid #C78C06; 
+    margin: 10px 0; 
+}
+
+.team-details p {
+    font-size: 0.9rem; 
+    color: #333;
+    line-height: 1.4; 
+    margin: 5px 0; 
+    text-align: left;
+}
+
+.top-left {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.top-right {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.bottom-left {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.bottom-right {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    background-color: #FFE6AC;
+}
+
+.info-section .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.info-image {
+    max-width: 40%;
+    height: auto;
+}
+
+.info-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    text-align: left;
+}
+
+.info-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.services-section {
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.services-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #333;
+}
+
+.two-box-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.three-box-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto 0; 
+}
+
+.service-box {
+    background: #FFE6AC;
+    text-align: center;
+    box-shadow: none;
+    padding-bottom: 10px;
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+}
+
+.service-box h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.service-button {
+    background-color: #000; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    width: 350px;
+}
+
+.service-button:hover {
+    background-color: #333;
+}
+
+.vision-section {
+    position: relative;
+    background: url('images/vision.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision-content {
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.vision-header {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.vision-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.vision-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.vision-button:hover {
+    background-color: rgba(0, 0, 0, 1); 
+}
+
+.contact-section {
+    padding: 40px 20px;
+    background-color: #fff; 
+    margin-top: 40px; 
+}
+
+.contact-header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form-container {
+    background-color: #FFE6AC;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contact-form-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #C78C06;
+    font-size: 1rem;
+}
+
+.contact-button {
+    background-color: #000;
+    color: #FFE6AC;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+    align-self: flex-start; 
+}
+
+.contact-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.location-container {
+    background-color: #FFE6AC;
+    padding: 20px;
+}
+
+.location-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.location-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.hours-container {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.hours-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hours-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; 
+    font-size: 1rem;
+    border-collapse: collapse; 
+}
+
+.hours-table td {
+    border: 1px solid black; 
+    padding: 10px;
+    text-align: left; 
+}
+
+.hours-table th {
+    border: 1px solid black; 
+    padding: 10px;
+    color: #fff;
+    text-align: left; 
+}
+
+.headtr{
+    background-color: #FFE6AC;
+}
+
+.footer{
+    color: #C68D00;
+}
