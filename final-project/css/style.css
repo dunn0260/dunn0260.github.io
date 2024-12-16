@@ -488,6 +488,9 @@ footer {
     background-color: #FFE6AC;
 }
 
+#fix {
+    margin: 3px auto; 
+}
 .footer{
     color: #C68D00;
 }
