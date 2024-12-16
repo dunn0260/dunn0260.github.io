@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #AAD4CF;
+}
+
+.border-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    background-color: #D4E9E7;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    pointer-events: none;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+}
+
+.menu-item {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    flex: 1;
+}
+
+.header-section {
+    padding-top: 10px; 
+    padding-bottom: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    margin: 20px 0;
+    color: black;
+}
+
+.image-paragraph-section {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.left-image {
+    width: 200px;
+    height: 200px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    float: left; /* Enables text to wrap around the image */
+}
+
+.facts-header{
+    font-size:24px;
+    margin-bottom: 0;
+}
+
+.facts{
+    margin-top:10px;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.contact-section {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    border: 1px solid black;
+    display: flex;
+    padding:8px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.checkbox-header {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.checkbox-container label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-container input[type="radio"] {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+}
+
+.submit-button {
+    font-size: 12px; 
+    cursor: pointer;
+    background: none; 
+    color: black; 
+    text-align: left; 
+    display: inline-block; 
+    box-sizing: border-box; 
+    width: auto; 
+    height: auto;
+}
+.footer{
+    padding-top: 10px;
+    text-align: right;
+}
