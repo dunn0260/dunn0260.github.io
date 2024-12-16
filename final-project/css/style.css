@@ -253,6 +253,7 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 50%;
     text-align: left;
+    padding-left: 20px;
 }
 
 .info-text h2 {
